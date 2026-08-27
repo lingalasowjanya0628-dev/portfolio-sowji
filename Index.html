@@ -1,27 +1,424 @@
+
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sowjanya Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sowjanya | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7ff;
+            color: #222;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* HOME */
+        #home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #dbeafe, #eef2ff);
+        }
+
+        #home h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        #home h2 {
+            font-size: 28px;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        #home p {
+            max-width: 650px;
+            font-size: 18px;
+            color: #4b5563;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 28px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+            transform: scale(1.05);
+        }
+
+        /* COMMON SECTION */
+        section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 35px;
+            margin-bottom: 35px;
+            color: #111827;
+        }
+
+        /* ABOUT */
+        .about-box {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .about-box p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .skill {
+            background: white;
+            padding: 16px 28px;
+            border-radius: 30px;
+            color: #2563eb;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-7px);
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .project {
+            width: 300px;
+            background: white;
+            padding: 35px 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project h3 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* GITHUB */
+        #github {
+            background: #eef2ff;
+        }
+
+        .github-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 30px;
+            background: #111827;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .github-btn:hover {
+            background: #374151;
+            transform: scale(1.05);
+        }
+
+        /* CONTACT */
+        .contact-box {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .contact-box p {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            #home h1 {
+                font-size: 40px;
+            }
+
+            #home h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Hi, I'm Sowjanya</h1>
-    <h2>MCA Student</h2>
+    <!-- NAVIGATION -->
+    <nav>
 
-    <h3>About Me</h3>
-    <p>I am an MCA student interested in programming and web development.</p>
+        <div class="logo">Sowjanya</div>
 
-    <h3>Skills</h3>
-    <p>Python | Java | HTML | CSS | SQL</p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-    <h3>Projects</h3>
-    <p>Exams Chatbot</p>
-    <p>Library Management System</p>
+    </nav>
 
-    <h3>GitHub</h3>
-    <a href="https://github.com/lingalasowjanya0628-dev">
-        My GitHub
-    </a>
+
+    <!-- HOME -->
+    <section id="home">
+
+        <div>
+
+            <h1>Hi, I'm Sowjanya 👋</h1>
+
+            <h2>MCA Student & Web Developer</h2>
+
+            <p>
+                I am an MCA student passionate about programming,
+                web development and creating useful applications.
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-box">
+
+            <p>
+                I am an MCA student interested in programming and
+                web development. I enjoy learning new technologies
+                and building projects that solve real-world problems.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">SQL</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>🤖 Exams Chatbot</h3>
+
+                <p>
+                    A chatbot designed to provide students
+                    with useful examination-related information.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>📚 Library Management System</h3>
+
+                <p>
+                    A system designed to manage library books
+                    and student information efficiently.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GITHUB -->
+    <section id="github">
+
+        <h2>My GitHub</h2>
+
+        <p>
+            Check out my projects and coding work.
+        </p>
+
+        <a
+            href="https://github.com/lingalasowjanya0628-dev"
+            target="_blank"
+            class="github-btn">
+
+            Visit My GitHub
+
+        </a>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="contact-box">
+
+            <p>📧 Email: YourEmail@example.com</p>
+
+            <p>📱 Phone: Your Phone Number</p>
+
+            <p>
+                🔗 GitHub:
+                <a
+                    href="https://github.com/lingalasowjanya0628-dev"
+                    target="_blank">
+                    Sowjanya GitHub
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>© 2026 Sowjanya | All Rights Reserved</p>
+
+    </footer>
 
 </body>
 </html>
+```
+
