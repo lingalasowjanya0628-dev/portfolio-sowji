@@ -3,78 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sowjanya | MCA Student</title>
-
+    <title>Sowjanya | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-
+    <!-- Header -->
+    <header>
         <div class="logo">Sowjanya.</div>
 
-        <div class="nav-links">
+        <nav>
             <a href="#home">Home</a>
-            <a href="#about">About</a>
+            <a href="#profile">Profile</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-        </div>
-
-    </nav>
+        </nav>
+    </header>
 
 
     <!-- Home -->
-    <section id="home" class="hero">
+    <section id="home" class="home">
 
-        <div class="hero-text">
+        <div class="home-text">
+            <p class="welcome">HELLO, WELCOME TO MY PORTFOLIO</p>
 
-            <p class="small-title">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>Sowjanya</span></h1>
 
-            <h1>
-                Hi, I'm <span>Sowjanya</span>
-            </h1>
+            <h2>MCA Student</h2>
 
-            <h2>MCA Student & Aspiring Developer</h2>
-
-            <p class="description">
-                I am passionate about programming, web development
-                and learning new technologies. I love creating
-                simple and useful digital solutions.
+            <p>
+                A passionate student interested in programming,
+                web development and modern technologies.
             </p>
 
-            <div class="buttons">
-
-                <a href="#projects" class="primary-btn">
-                    View My Projects
-                </a>
-
-                <a href="#contact" class="secondary-btn">
-                    Contact Me
-                </a>
-
-            </div>
-
+            <a href="#profile" class="button">View Profile</a>
         </div>
 
+    </section>
 
-        <div class="hero-card">
 
-            <div class="profile-circle">
-                S
-            </div>
+    <!-- Profile Cards -->
+    <section id="profile" class="section">
 
-            <h3>Sowjanya</h3>
+        <p class="small-title">MY PORTFOLIO</p>
 
-            <p>MCA Student</p>
+        <h2>Explore My Profile</h2>
 
-            <div class="status">
-                ● Currently Learning
-            </div>
+        <div class="cards">
+
+            <a href="#about" class="card">
+                <div class="icon">👩‍💻</div>
+                <h3>About Me</h3>
+                <p>Know more about me</p>
+            </a>
+
+            <a href="#education" class="card">
+                <div class="icon">🎓</div>
+                <h3>Education</h3>
+                <p>My academic journey</p>
+            </a>
+
+            <a href="#skills" class="card">
+                <div class="icon">💻</div>
+                <h3>Skills</h3>
+                <p>My technical skills</p>
+            </a>
+
+            <a href="#projects" class="card">
+                <div class="icon">📂</div>
+                <h3>Projects</h3>
+                <p>My academic projects</p>
+            </a>
+
+            <a href="#contact" class="card">
+                <div class="icon">📧</div>
+                <h3>Contact</h3>
+                <p>Get in touch with me</p>
+            </a>
 
         </div>
 
@@ -82,54 +90,24 @@
 
 
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="detail-section">
 
-        <p class="section-small">GET TO KNOW ME</p>
+        <h2>About Me</h2>
 
-        <h2 class="section-title">About Me</h2>
+        <div class="content-box">
 
-        <div class="about-content">
+            <h3>Hello! I'm Sowjanya 👋</h3>
 
-            <div class="about-card">
+            <p>
+                I am an MCA student interested in software development,
+                programming and web technologies.
+            </p>
 
-                <h3>Who I Am</h3>
-
-                <p>
-                    I am an MCA student with an interest in software
-                    development and web technologies. I enjoy learning
-                    programming languages and building projects.
-                </p>
-
-                <p>
-                    My goal is to improve my technical skills and
-                    build a successful career in the IT industry.
-                </p>
-
-            </div>
-
-            <div class="about-details">
-
-                <div>
-                    <strong>Education</strong>
-                    <span>MCA - Pursuing</span>
-                </div>
-
-                <div>
-                    <strong>Interest</strong>
-                    <span>Web Development</span>
-                </div>
-
-                <div>
-                    <strong>Languages</strong>
-                    <span>Python, Java, C++</span>
-                </div>
-
-                <div>
-                    <strong>Goal</strong>
-                    <span>Software Developer</span>
-                </div>
-
-            </div>
+            <p>
+                I enjoy learning new technologies and creating useful
+                projects. My goal is to develop strong technical skills
+                and build a successful career in the IT industry.
+            </p>
 
         </div>
 
@@ -137,87 +115,38 @@
 
 
     <!-- Education -->
-    <section id="education" class="section education-section">
+    <section id="education" class="detail-section">
 
-        <p class="section-small">MY ACADEMIC JOURNEY</p>
+        <h2>Education</h2>
 
-        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
 
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>2026 - Present</span>
-
-                    <h3>Master of Computer Applications</h3>
-
-                    <p>
-                        Currently pursuing MCA.
-                    </p>
-
-                </div>
-
+            <div class="education-card">
+                <span>2026 - Present</span>
+                <h3>MCA</h3>
+                <p>Master of Computer Applications</p>
+                <strong>Currently Pursuing</strong>
             </div>
 
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>2023 - 2026</span>
-
-                    <h3>Bachelor of Science</h3>
-
-                    <p>
-                        MPCS
-                    </p>
-
-                </div>
-
+            <div class="education-card">
+                <span>2023 - 2026</span>
+                <h3>B.Sc.</h3>
+                <p>MPCS</p>
+                <strong>Completed</strong>
             </div>
 
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>2021 - 2023</span>
-
-                    <h3>Intermediate</h3>
-
-                    <p>
-                        MPC
-                    </p>
-
-                </div>
-
+            <div class="education-card">
+                <span>2021 - 2023</span>
+                <h3>Intermediate</h3>
+                <p>MPC</p>
+                <strong>Completed</strong>
             </div>
 
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>2021</span>
-
-                    <h3>SSC</h3>
-
-                    <p>
-                        Secondary School Certificate
-                    </p>
-
-                </div>
-
+            <div class="education-card">
+                <span>2021</span>
+                <h3>SSC</h3>
+                <p>Secondary School Certificate</p>
+                <strong>Completed</strong>
             </div>
 
         </div>
@@ -226,46 +155,38 @@
 
 
     <!-- Skills -->
-    <section id="skills" class="section">
+    <section id="skills" class="detail-section">
 
-        <p class="section-small">WHAT I KNOW</p>
+        <h2>Technical Skills</h2>
 
-        <h2 class="section-title">My Skills</h2>
+        <div class="skill-grid">
 
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <div class="skill-icon">HTML</div>
+            <div class="skill">
                 <h3>HTML</h3>
                 <p>Web Structure</p>
             </div>
 
-            <div class="skill-card">
-                <div class="skill-icon">CSS</div>
+            <div class="skill">
                 <h3>CSS</h3>
                 <p>Web Styling</p>
             </div>
 
-            <div class="skill-card">
-                <div class="skill-icon">JS</div>
+            <div class="skill">
                 <h3>JavaScript</h3>
-                <p>Web Interaction</p>
+                <p>Web Development</p>
             </div>
 
-            <div class="skill-card">
-                <div class="skill-icon">PY</div>
+            <div class="skill">
                 <h3>Python</h3>
                 <p>Programming</p>
             </div>
 
-            <div class="skill-card">
-                <div class="skill-icon">JV</div>
+            <div class="skill">
                 <h3>Java</h3>
                 <p>Programming</p>
             </div>
 
-            <div class="skill-card">
-                <div class="skill-icon">SQL</div>
+            <div class="skill">
                 <h3>SQL</h3>
                 <p>Database</p>
             </div>
@@ -276,70 +197,43 @@
 
 
     <!-- Projects -->
-    <section id="projects" class="section projects-section">
+    <section id="projects" class="detail-section">
 
-        <p class="section-small">MY RECENT WORK</p>
+        <h2>My Projects</h2>
 
-        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
 
-        <div class="projects-grid">
-
-            <div class="project-card">
-
-                <div class="project-number">01</div>
-
+            <div class="project">
+                <span>PROJECT 01</span>
                 <h3>Library Management System</h3>
 
                 <p>
-                    A system designed to manage library books,
+                    A system for managing library books,
                     student details and library information.
                 </p>
 
                 <div class="tags">
-                    <span>Java</span>
-                    <span>SQL</span>
-                    <span>Maven</span>
+                    <b>Java</b>
+                    <b>SQL</b>
+                    <b>Maven</b>
                 </div>
-
             </div>
 
 
-            <div class="project-card">
-
-                <div class="project-number">02</div>
-
+            <div class="project">
+                <span>PROJECT 02</span>
                 <h3>Student Portfolio</h3>
 
                 <p>
-                    A modern personal portfolio website created
-                    to showcase education, skills and projects.
+                    A static portfolio website created to
+                    showcase my education, skills and projects.
                 </p>
 
                 <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
+                    <b>HTML</b>
+                    <b>CSS</b>
+                    <b>JavaScript</b>
                 </div>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <div class="project-number">03</div>
-
-                <h3>Python Project</h3>
-
-                <p>
-                    A beginner-friendly Python project created
-                    to practice programming and problem solving.
-                </p>
-
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Programming</span>
-                </div>
-
             </div>
 
         </div>
@@ -348,30 +242,17 @@
 
 
     <!-- Contact -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="detail-section">
 
-        <p class="section-small">GET IN TOUCH</p>
+        <h2>Contact Me</h2>
 
-        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact">
 
-        <p>
-            I'm always interested in learning, building projects
-            and exploring new opportunities.
-        </p>
+            <p>📧 <strong>Email:</strong> yourname@gmail.com</p>
 
-        <div class="contact-links">
+            <p>📱 <strong>Phone:</strong> 9876543210</p>
 
-            <a href="mailto:yourname@gmail.com">
-                📧 Email
-            </a>
-
-            <a href="#">
-                💼 LinkedIn
-            </a>
-
-            <a href="#">
-                💻 GitHub
-            </a>
+            <p>📍 <strong>Location:</strong> Guntur, Andhra Pradesh</p>
 
         </div>
 
@@ -380,15 +261,8 @@
 
     <!-- Footer -->
     <footer>
-
-        <p>
-            © 2026 Sowjanya. Built with HTML, CSS & JavaScript.
-        </p>
-
+        <p>© 2026 Sowjanya | Student Portfolio</p>
     </footer>
-
-
-    <script src="script.js"></script>
 
 </body>
 </html>
