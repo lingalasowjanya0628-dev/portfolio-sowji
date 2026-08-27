@@ -1,7 +1,15 @@
-alert("Welcome to Sowjanya's Student Portfolio!");
+document.addEventListener("DOMContentLoaded", function () {
 
-document.querySelectorAll("nav a").forEach(function(link) {
-    link.addEventListener("click", function() {
-        console.log("You clicked: " + this.textContent);
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    navLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            console.log("You clicked: " + this.textContent);
+
+        });
+
     });
+
 });
