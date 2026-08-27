@@ -1,15 +1,20 @@
+// Show a message when the page loads
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("Welcome to Sowjanya's Portfolio!");
+});
 
-    const navLinks = document.querySelectorAll(".nav-links a");
+// Add active effect to navigation links
+const navLinks = document.querySelectorAll("nav a");
 
-    navLinks.forEach(function (link) {
+navLinks.forEach(function (link) {
 
-        link.addEventListener("click", function () {
+    link.addEventListener("click", function () {
 
-            console.log("You clicked: " + this.textContent);
-
+        navLinks.forEach(function (item) {
+            item.classList.remove("active");
         });
 
+        this.classList.add("active");
     });
 
 });
